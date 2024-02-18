@@ -1,45 +1,68 @@
-
 @font-face {
-  font-family: 'LibreBaskerville';
-  src: url('../public/LibreBaskerville-Bold.woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'sf';
-  src: url('../public/sf-ui-display-medium-58646be638f96.woff2');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "LibreBaskerville";
+	src: url("../public/LibreBaskerville-Bold.woff2");
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'sf';
-  src: url('../public/sf-ui-display-bold-58646a511e3d9.woff2');
-  font-weight: bold;
-  font-style: normal;
+	font-family: "sf";
+	src: url("../public/sf-ui-display-medium-58646be638f96.woff2");
+	font-weight: normal;
+	font-style: normal;
 }
 
-h1 {
-  font-family: LibreBaskerville;
+@font-face {
+	font-family: "sf";
+	src: url("../public/sf-ui-display-bold-58646a511e3d9.woff2");
+	font-weight: bold;
+	font-style: normal;
 }
 
+:root {
+	--main-color: #868250;
+	--secondary-color: #595523;
+	--gray: #a6a596;
+	--darker-gray: #89887c;
+	--medium-gray: #a5a3a0;
+	--light-gray: #b5b4b0;
+}
 
 * {
-  font-family: sf;
-  box-sizing: border-box;
+	font-family: sf;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 1rem;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
 }
 
 h1 {
-  font-weight: 800;
-  font-size: 1.5rem;
+	font-weight: 800;
+	font-family: LibreBaskerville;
+	color: var(--main-color);
+	font-size: 2rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	margin: 2.5rem 0 0 0;
+	color: var(--main-color);
+}
+
+a:hover {
+	color: var(--secondary-color);
 }

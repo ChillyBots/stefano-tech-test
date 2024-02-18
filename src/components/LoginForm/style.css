@@ -1,0 +1,99 @@
+.login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	position: relative;
+	padding: 1rem 2.5rem;
+	min-height: 40.6rem;
+}
+
+.login:after {
+	content: " ";
+	display: none;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 20rem;
+	height: 100%;
+	background: url("../../.../../../public/BG.svg") right bottom / contain no-repeat;
+}
+
+.login__logo-container {
+	align-self: flex-start;
+}
+.login__form-container {
+	width: 100%;
+	max-width: 32.3rem;
+	margin-top: auto;
+}
+.login__title {
+	margin-bottom: 0.6rem;
+}
+.login__instructions {
+	margin: 0;
+	color: var(--secondary-color);
+}
+.login__fields-container {
+	margin: 2.5rem auto;
+}
+.login__field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.8rem;
+}
+.login__error {
+	color: var(--medium-gray);
+	margin-top: 0.6rem;
+	padding-left: 1rem;
+	font-size: 0.8rem;
+	color: red;
+}
+
+.login__footer {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: auto;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.login__footer-paragraph {
+	color: var(--main-color);
+	margin: 0.3rem 0.6rem 0 0;
+}
+
+.login__footer-link {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+	.login__logo-container {
+		padding-top: 1.5rem;
+	}
+	.btn--login {
+		width: auto;
+	}
+}
+@media only screen and (min-width: 1240px) {
+	.login {
+		padding: 1rem 3.1rem;
+	}
+	.login:after {
+		display: flex;
+	}
+	.login__footer {
+		flex-direction: row;
+		align-self: flex-start;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		text-align: left;
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,28 @@
+.label {
+	font-size: 1rem;
+	color: var(--medium-gray);
+	margin-bottom: 0.6rem;
+}
+
+.input {
+	font-size: 0.8rem;
+	height: 2.2rem;
+	border: 2px solid var(--gray);
+	border-radius: 3px;
+	padding: 0 0.6rem;
+	color: var(--darker-gray);
+}
+.input:focus {
+	outline: none;
+}
+.input:hover {
+	border-color: var(--main-color);
+}
+.input::placeholder,
+.input:disabled,
+.label--disabled {
+	opacity: 0.2;
+}
+.input--error {
+	border-color: red;
+}
