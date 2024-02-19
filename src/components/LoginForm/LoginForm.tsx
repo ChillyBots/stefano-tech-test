@@ -12,7 +12,6 @@ const LoginForm = () => {
 
 	const handleLogin = (e) => {
 		e.preventDefault();
-		console.log("details sent", form);
 		setForm({
 			username: "",
 			password: "",
